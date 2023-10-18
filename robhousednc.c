@@ -110,7 +110,6 @@ void findends(uint8_t *robi, uint8_t *robj, uint32_t maxj, uint16_t *money)  {
 void findmaxselection(const uint8_t robi, const uint8_t robj, const uint32_t i, const uint32_t j, uint16_t* restrict money , uint8_t *rob)  {
   uint64_t n, mid, sum1, sum2, sum3, maxsumitomid0, maxsumitomid1, maxsummidp1toj0, maxsummidp1toj1;
   n = 1+j-i;  
-  memset(rob + i, 0, n*sizeof(rob[0]));
   rob[i] = robi;
   rob[j] = robj;
   if (n <= 2) return;
